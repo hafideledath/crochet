@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background-color: #eadcd3;
+}
+
+main {
+  color: #4a3d4b;
+  z-index: 1;
+  background-color: #eadcd3;
+  position: relative;
+  box-shadow: 0 -3px 3px #4a3d4b;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'DM Serif Display', serif;
+  letter-spacing: 2.5px;
+  padding: 50px 0 0;
+  margin: 0;
+}
+
+img {
+  width: 300px;
+  filter: drop-shadow(-2px 2px 8px #978dae);
+}
+
+.flex {
+  display: flex;
+  margin: 0 100px;
+  gap: 50px;
+  align-items: center;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+*:not(.flex) > p {
+  text-align: center;
+}

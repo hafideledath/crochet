@@ -1,0 +1,59 @@
+nav {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    background-color: #4a3d4b;
+}
+
+.sticky-note {
+    height: 80px;
+    width: 200px;
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0.8;
+    transition-duration: .2s;
+}
+
+.sticky-note:hover {
+    transform: none;
+    opacity: 1;
+}
+
+nav a {
+    text-decoration: none;
+    position: absolute;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    top: 0; left: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    height: 80px;
+    width: 200px;
+}
+
+nav a::before, nav a::after {
+    content: "";
+    position: absolute;
+    border-top: 25px solid #4a3d4b;
+    width: 0;
+    top: 0;
+}
+
+nav a::before {
+    left: 0;
+    border-right: 25px solid transparent;
+}
+
+nav a::after {
+    right: 0;
+    border-left: 25px solid transparent;
+}
+
+
+nav a, nav a:visited {
+    color: #4a3d4b !important;
+}
